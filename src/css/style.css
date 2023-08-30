@@ -8,6 +8,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
+    min-width: 700px;
 }
 
 li {
@@ -96,6 +97,11 @@ header {
     font-weight: 600;
 }
 
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .lang_menu,
 .currency_menu {
@@ -111,8 +117,7 @@ header {
 }
 
 .selected_lang,
-.selected_currency,
-.category {
+.selected_currency {
     cursor: pointer;
     display: flex;
     justify-content: space-around;
@@ -124,7 +129,7 @@ header {
     color: #7E7E7E;
 }
 
-.category{
+.category {
     color: #fff !important;
 }
 
@@ -153,7 +158,7 @@ header {
     left: 0;
 }
 
-.category ul{
+.category ul {
     display: none;
     margin: 0;
     padding: 0px;
@@ -168,18 +173,18 @@ header {
 }
 
 .lang_menu ul li,
-.currency_menu ul li{
+.currency_menu ul li {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lang_menu_ul li{
-width: 200px;
-height: 50px;
-background-color: yellow;
-margin: 5px;
+.lang_menu_ul li {
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    margin: 5px;
 }
 
 .lang_menu ul li a,
@@ -201,23 +206,20 @@ margin: 5px;
     height: 30px;
 }
 
-.fr::before {
-    background-image: url(../img/category-1.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+.us::before {
+    background-image: url(https://flagsapi.com/US/flat/32.png);
 }
 
 .de::before {
-    background-image: url(../img/category-2.svg);
+    background-image: url(https://flagsapi.com/DE/flat/32.png);
 }
 
 .ru::before {
-    background-image: url(../img/category-3.svg);
+    background-image: url(https://flagsapi.com/RU/flat/32.png);
 }
 
 .fr::before {
-    background-image: url(https://flagsapi.com/FR/flat/16.png);
+    background-image: url(https://flagsapi.com/FR/flat/32.png);
 }
 
 .lang_menu:hover ul,
@@ -326,9 +328,10 @@ select {
 
 .social_media ul li {
     margin-right: 15px;
+    position: relative;
 }
 
-.social_media ul li:before {
+.social_media ul li::before {
     margin-right: 5px;
     width: 20px;
     height: 20px;
@@ -343,8 +346,6 @@ select {
     line-height: 20px;
 }
 
-
-
 .social_media ul li:nth-child(1)::before {
     content: "1";
 }
@@ -358,14 +359,15 @@ select {
 }
 
 
+
 .header_bottom {
     width: 100%;
     height: 150px;
-    background-color: transparent;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #7E7E7E;
+    border: 1px solid #DEDFE2;
 }
 
 .header_bottom_left {
@@ -374,12 +376,88 @@ select {
     align-items: center;
     padding-left: 20px;
     border: 1px solid #3BB77E;
-    width: 220px;
+    width: 200px;
     height: 90px;
     border-radius: 10px;
     background-color: #3BB77E;
     color: #fff;
 }
+
+.header_bottom_left_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_bottom_left_item span{
+    margin-left: 5px;
+}
+
+.header_bottom_center {
+    width: 700px;
+    height: 100%;
+    background-color: transparent;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header_bottom_center ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_bottom_center ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.header_bottom_center ul li i {
+    padding-left: 5px;
+    font-size: 12px;
+    color: #7E7E7E;
+}
+
+.header_bottom_center ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.header_bottom_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    background-color: transparent;
+}
+.header_bottom_right article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.header_bottom_right article p{
+    font-size: 26px;
+    color: #3BB77E;
+    font-weight: 800;
+}
+
+.header_bottom_right article span{
+    color: #7E7E7E;
+    font-size: 14px;
+}
+
 
 main {
     width: 100%;

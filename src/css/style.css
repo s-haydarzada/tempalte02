@@ -358,8 +358,6 @@ select {
     content: "3";
 }
 
-
-
 .header_bottom {
     width: 100%;
     height: 150px;
@@ -383,13 +381,13 @@ select {
     color: #fff;
 }
 
-.header_bottom_left_item{
+.header_bottom_left_item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_bottom_left_item span{
+.header_bottom_left_item span {
     margin-left: 5px;
 }
 
@@ -439,7 +437,8 @@ select {
     margin-right: 20px;
     background-color: transparent;
 }
-.header_bottom_right article{
+
+.header_bottom_right article {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -447,13 +446,13 @@ select {
     margin-left: 10px;
 }
 
-.header_bottom_right article p{
+.header_bottom_right article p {
     font-size: 26px;
     color: #3BB77E;
     font-weight: 800;
 }
 
-.header_bottom_right article span{
+.header_bottom_right article span {
     color: #7E7E7E;
     font-size: 14px;
 }
@@ -471,7 +470,7 @@ main {
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     border-radius: 20px;
     margin-top: 30px;
 }
@@ -541,4 +540,286 @@ form button {
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     font-size: 20px;
+}
+
+.featured_category {
+    width: 98%;
+    height: 600px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+
+}
+
+.top_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected {
+    color: #3BB77E !important;
+}
+
+
+.top_left h1 {
+    font-size: 40px;
+}
+
+.top_left ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.top_left ul li {
+    margin-right: 30px;
+    transition: .5s;
+}
+
+.top_left ul li:hover {
+    transform: translateY(-5px);
+}
+
+.top_left ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #7E7E7E;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.arrow button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    transition: .5s;
+}
+
+.arrow button:hover {
+    background-color: #3BB77E;
+}
+
+.arrow button:hover i {
+    color: white;
+}
+
+
+.arrow button i {
+    font-size: 14px;
+    color: #7E7E7E;
+}
+
+.featured_center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100px;
+    height: 180px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 10px;
+    transition: .7s;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card:hover .center_content h3 {
+    color: #3BB77E;
+    font-weight: 600;
+}
+
+
+.card:nth-child(1) {
+    background-color: #F2FCE4;
+}
+
+.card:nth-child(2) {
+    background-color: #FFFCEB;
+}
+
+.card:nth-child(3) {
+    background-color: #ECFFEC;
+}
+
+.card:nth-child(4) {
+    background-color: #FEEFEA;
+}
+
+.card:nth-child(5) {
+    background-color: #FFF3EB;
+}
+
+.card:nth-child(6) {
+    background-color: #FFF3FF;
+}
+
+.card:nth-child(7) {
+    background-color: #F2FCE4;
+}
+
+.card:nth-child(8) {
+    background-color: #FFFCEB;
+}
+
+.card:nth-child(9) {
+    background-color: #FEEFEA;
+}
+
+.card:nth-child(10) {
+    background-color: #ECFFEC;
+}
+
+.card_img {
+    width: 80%;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    position: relative;
+    transition: .7s ease-in;
+}
+
+.card_img img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.card_img:hover img {
+    width: 105%;
+}
+
+.center_content {
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.center_content h3 {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.center_content span {
+    padding: 0 5px;
+}
+
+.featured_bottom {
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured_bottom div{
+    width: 400px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 50px;
+    transition: .5s;
+}
+
+.featured_bottom div h1{
+    font-size: 25px;
+    transition: .5s;
+}
+
+.featured_bottom div:nth-child(1){
+    background-image: url("../img/banner-1.png");
+}
+.featured_bottom div:nth-child(2){
+    background-image: url("../img/banner-2.png");
+    margin: 0 30px;
+}
+.featured_bottom div:nth-child(3){
+    background-image: url("../img/banner-3.png");
+}
+
+.featured_bottom button{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #3BB77E;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    transition: .5s;
+}
+
+.featured_bottom button i{
+    margin-left: 5px;
+}
+
+.featured_bottom div:hover{
+    filter: brightness(95%);
+}
+
+.featured_bottom div:hover h1{
+    transform: translateY(-5px);
+}
+
+.featured_bottom button:hover{
+    width: 120px;
+    background-color: orange;
 }

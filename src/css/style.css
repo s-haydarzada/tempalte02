@@ -907,7 +907,7 @@ form button {
 
 .product_card:hover .prod_image2 img{
     display: block;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .product_card:hover .wishlist{
     display: block;
@@ -1078,6 +1078,10 @@ form button {
     align-items: center;
 }
 
+.prod_price{
+    width: 100%;
+}
+
 .prod_price b {
     margin-right: 10px;
     font-size: 18px;
@@ -1090,7 +1094,7 @@ form button {
 }
 
 .product_card_content button {
-    width: 100px;
+    width: 120px;
     height: 40px;
     background-color: #D8F6E8;
     border-radius: 5px;
@@ -1101,13 +1105,14 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s;
+    transition: .7s;
     cursor: pointer;
 }
 
 .product_card_content button:hover {
     background-color: #3BB77E;
     color: white;
+    transform: translateY(-5px);
 }
 
 .product_card_content button:hover img {

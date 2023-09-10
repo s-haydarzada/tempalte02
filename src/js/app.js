@@ -87,7 +87,7 @@ window.addEventListener("load", () => {
         {
             id: 0,
             img1: "/src/img/product-1-1.jpg",
-            img2:"/src/img/product-1-2.jpg",
+            img2: "/src/img/product-1-2.jpg",
             title: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
             price: 28.85,
             oldPrice: 32.5
@@ -95,7 +95,7 @@ window.addEventListener("load", () => {
         {
             id: 1,
             img1: "/src/img/product-2-1.jpg",
-            img2:"/src/img/product-2-2.jpg",
+            img2: "/src/img/product-2-2.jpg",
             title: "All Natural Italian-Style Chicken Meatballs",
             price: 28.85,
             oldPrice: 32.5
@@ -103,7 +103,7 @@ window.addEventListener("load", () => {
         {
             id: 2,
             img1: "/src/img/product-3-1.jpg",
-            img2:"/src/img/product-3-2.jpg",
+            img2: "/src/img/product-3-2.jpg",
             title: "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
             price: 28.85,
             oldPrice: 32.5
@@ -111,7 +111,7 @@ window.addEventListener("load", () => {
         {
             id: 3,
             img1: "/src/img/product-4-1.jpg",
-            img2:"/src/img/product-4-2.jpg",
+            img2: "/src/img/product-4-2.jpg",
             title: "Foster Farms Takeout Crispy Classic Buffalo Wings",
             price: 28.85,
             oldPrice: 32.5
@@ -119,7 +119,7 @@ window.addEventListener("load", () => {
         {
             id: 4,
             img1: "/src/img/product-5-1.jpg",
-            img2:"/src/img/product-5-2.jpg",
+            img2: "/src/img/product-5-2.jpg",
             title: "Blue Diamond Almonds Lightly Salted Vegetables",
             price: 28.85,
             oldPrice: 32.5
@@ -127,7 +127,7 @@ window.addEventListener("load", () => {
         {
             id: 5,
             img1: "/src/img/product-6-1.jpg",
-            img2:"/src/img/product-6-2.jpg",
+            img2: "/src/img/product-6-2.jpg",
             title: "Chobani Complete Vanilla Greek Yogurt",
             price: 28.85,
             oldPrice: 32.5
@@ -136,7 +136,7 @@ window.addEventListener("load", () => {
         {
             id: 6,
             img1: "/src/img/product-7-1.jpg",
-            img2:"/src/img/product-7-2.jpg",
+            img2: "/src/img/product-7-2.jpg",
             title: "Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g",
             price: 28.85,
             oldPrice: 32.5
@@ -144,7 +144,7 @@ window.addEventListener("load", () => {
         {
             id: 7,
             img1: "/src/img/product-8-1.jpg",
-            img2:"/src/img/product-8-2.jpg",
+            img2: "/src/img/product-8-2.jpg",
             title: "Encore Seafoods Stuffed Alaskan Salmon",
             price: 28.85,
             oldPrice: 32.5
@@ -152,7 +152,7 @@ window.addEventListener("load", () => {
         {
             id: 8,
             img1: "/src/img/product-9-1.jpg",
-            img2:"/src/img/product-9-2.jpg",
+            img2: "/src/img/product-9-2.jpg",
             title: "Gorton’s Beer Battered Fish Fillets with soft paper",
             price: 28.85,
             oldPrice: 32.5
@@ -160,17 +160,25 @@ window.addEventListener("load", () => {
         {
             id: 9,
             img1: "/src/img/product-10-1.jpg",
-            img2:"/src/img/product-10-2.jpg",
+            img2: "/src/img/product-10-2.jpg",
             title: "Haagen-Dazs Caramel Cone Ice Cream Ketchup",
             price: 28.85,
             oldPrice: 32.5
         }
     ]
 
-    products.map((item)=>{
-        const content=` <div class="product_card">
+    products.map((item) => {
+        const content = ` <div class="product_card">
             <div class="prod_image1">
               <img src=${item.img1} alt="" />
+            </div>
+            <div class="prod_image2">
+              <img src=${item.img2} alt="" />
+              <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-code-compare"></i>
+              <i class="fa-regular fa-eye"></i>
+            </div>
             </div>
             <div class="product_card_content">
               <span>Snack</span>
@@ -194,7 +202,7 @@ window.addEventListener("load", () => {
             </div>
           </div>`
 
-          products_card.innerHTML+=content;
+        products_card.innerHTML += content;
     })
 
 

@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="./src/js/app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
     <title>Document</title>
-  </head>
-  <body>
-    <header>
+</head>
+<body>
+      <header>
       <div class="header_top">
         <div class="header_top_left">
           <ul>
@@ -224,149 +216,28 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="banner">
-        <div class="content">
-          <h1>Don’t miss amazing<br />grocery deals</h1>
-          <p>Sign up for the daily newsletter</p>
-          <form action="">
-            <input type="email" name="" id="" placeholder="your email adress" />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </section>
-      <section class="featured_category">
-        <div class="top">
-          <div class="top_left">
-            <div>
-              <h1>Featured Categories</h1>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <a href="#" class="selected">Cake & Milk</a>
-                </li>
-                <li>
-                  <a href="#">Coffes & Teas</a>
-                </li>
-                <li>
-                  <a href="#">Pet Foods</a>
-                </li>
-                <li>
-                  <a href="#">Vegetables</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="arrow">
-            <button>
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-        <div class="featured_center" id="featured_cards">
-          <!-- <div class="card">
-            <div class="card_img">
-              <img src="./src/img/cat-13.png" alt="" />
-            </div>
-            <div class="center_content">
-              <h3>Cake & Milk</h3>
-              <p><span>26</span>items</p>
-            </div>
-          </div> -->
-        </div>
-        <div class="featured_bottom">
-          <div>
-            <h1>
-              Everyday Fresh & <br />
-              Clean with Our <br />
-              Products
-            </h1>
-            <button>
-              Shop Now
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <div>
-            <h1>
-              Everyday Fresh & <br />
-              Clean with Our <br />
-              Products
-            </h1>
-            <button>
-              Shop Now
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <div>
-            <h1>
-              Everyday Fresh & <br />
-              Clean with Our <br />
-              Products
-            </h1>
-            <button>
-              Shop Now
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="products">
-        <div class="products_top">
-          <div>
-            <h1>Popular Products</h1>
-          </div>
-          <div class="products_nav">
-            <ul>
-              <li>All</li>
-              <li>milks & Dairies</li>
-              <li>Coffee & Teas</li>
-              <li>Pet Foods</li>
-              <li>Meats</li>
-              <li>Vegetables</li>
-              <li>Fruits</li>
-            </ul>
-          </div>
-        </div>
-        <div class="products_bottom" id="products_card">
-          <!-- <div class="product_card">
-            <div class="prod_image1">
-              <img src="./src/img/product-1-1.jpg" alt="" class="prod_img" />
-            </div>
-            <div class="prod_image2">
-              <img src="./src/img/product-1-2.jpg" alt="" />
-              <div class="wishlist">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-code-compare"></i>
-                <i class="fa-regular fa-eye"></i>
-              </div>
-            </div>
-            <div class="product_card_content">
-              <span>Snack</span>
-              <h2 class="product_title">Seeds of change organic Quiona, brown,&red rice</h2>
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star-half-stroke"></i>
-              </div>
-              <p>by <span>nestfood</span></p>
-              <div class="product_card_buttom">
-                <div class="prod_price">
-                  <b>$28.85</b>
-                  <s>$32.8</s>
+    
+    <div class="checkout_container">
+        <h2>Your Cart</h2>
+        <div class="checkout_detail">
+            <div class="checkout_left">
+                <div class="checkout_info">
+                    <h3>Product</h3>
+                    <ul>
+                        <li>Unit Price</li>
+                        <li>Quantity</li>
+                        <li>Subtotal</li>
+                        <li>Remove</li>
+                    </ul>
                 </div>
-                <button class="add" type="button"><img src="./src/img/icon-cart.svg" style="width: 20px;height: 20px;" alt="">
-                  Add</button>
-              </div>
+                <div class="checkout_content">
+
+                </div>
             </div>
-          </div> -->
+            <div class="checkout_right"></div>
         </div>
-      </section>
-    </main>
-  </body>
+      
+    </div>
+
+</body>
 </html>
